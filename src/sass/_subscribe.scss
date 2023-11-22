@@ -1,0 +1,22 @@
+.subscribe {
+  background-color: $testColor;
+
+  &__container {
+    display: grid;
+    justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  input {
+    font-family: "Public Sans", sans-serif;
+    font-size: $font-med;
+    width: 35%;
+    border-width: 1px;
+    border-radius: 6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

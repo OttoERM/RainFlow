@@ -1,0 +1,48 @@
+.whyUs {
+  background-color: $white;
+
+  h2 {
+    color: $darkBlue;
+  }
+
+  h3 {
+    color: $darkBlue;
+  }
+
+  p {
+    color: $darkBlue;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .card {
+    // flex-basis: 30%;
+    flex-grow: 2;
+    background-color: $two;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 150ms ease-in-out;
+
+    @include breakpoint-up(medium) {
+      flex-basis: 30%;
+      text-align: left;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+
+    p {
+      margin-bottom: 1.125rem;
+    }
+  }
+}

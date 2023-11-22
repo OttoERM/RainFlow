@@ -1,0 +1,43 @@
+@import "mixins";
+
+.hero {
+  background-color: $one;
+
+  h1 {
+    color: $darkBlue;
+  }
+
+  p {
+    color: $darkBlue;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider {
+    @include breakpoint-up(large) {
+      width: 512px;
+      height: 512px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__slides {
+    width: 100%;
+    height: 100%;
+    // animation: fade 1s;
+    display: none;
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      flex: 2;
+    }
+  }
+}

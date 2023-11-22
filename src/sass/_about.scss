@@ -1,0 +1,44 @@
+.about {
+  background-color: $one;
+  color: $darkBlue;
+
+  h1 {
+    color: $darkBlue;
+  }
+
+  h2 {
+    color: $darkBlue;
+  }
+
+  .container--pall {
+    padding-top: 1rem;
+  }
+
+  @include breakpoint-up(xlarge) {
+    .container--pall {
+      padding-top: 3rem;
+    }
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: 2px solid $brightCyan;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 0;
+    text-align: center;
+  }
+}
