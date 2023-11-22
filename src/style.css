@@ -238,6 +238,9 @@ button:hover,
   background-color: hsl(233, 26%, 24%);
   z-index: 1;
 }
+.header a span {
+  background-color: hsl(0, 0%, 100%);
+}
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
@@ -290,7 +293,7 @@ button:hover,
 .header__menu a {
   display: block;
   padding: 0.625rem;
-  color: hsl(0, 0%, 100%);
+  color: hsl(233, 26%, 24%);
   text-align: center;
 }
 .header__links a {
